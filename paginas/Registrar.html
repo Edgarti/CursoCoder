@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="../css/miestilo.css">
+</head>
+
+<body id="bodyfondo">
+    <header>
+        <div class="boxMenu">
+            <div>
+                <a class="linkMenu hoverMenu " href="Inicio.html">Inicio</a>
+            </div>
+            <div>
+                <a class="linkMenu hoverMenu " href="MenuMaestras.html">Maestras</a>
+            </div>
+            <div>
+                <a class="linkMenu hoverMenu " href="Consultar.html">Consultas Incidencias</a>
+            </div>
+            <div>
+                <a class="linkMenu hoverMenu " href="#">Asignar Incidencias</a>
+            </div>
+            <div>
+                <a class=" linkMenu hoverMenu " href=" ../index.html">salir </a>
+            </div>
+    </header>
+    <div class="titulo">Registro de Incidencias</div>
+    <div class="inlineBlock">
+        <form id="form" action="/contacto.js" method="post" enctype="">
+            <div class="divTable">
+                <div class="divRow">
+                    <div class="divCell">
+                        <input id="input" type="date" name="date" id="" placeholder="Digite fecha">
+                    </div>
+                    <div class="divCell">
+                        <input id="input" type="text" name="numero" id="" placeholder="Número ticket">
+                    </div>
+                </div>
+                <div class="divRow">
+                    <div class="divCell">
+                        <input id="input" type="text" name="proyecto" id="" placeholder="Digite el proyecto">
+                    </div>
+                    <div class="divCell">
+                        <input id="input" type="text" name="cliente" id="" placeholder="Digite el cliente">
+                    </div>
+                </div>
+                <div class="divRow">
+                    <div class="divCell">
+                        <input id="input" type="text" name="email" id="" placeholder="Suba imagenes">
+                    </div>
+                    <div class="divCell">
+                        <input id="input" type="text" name="email" id="" placeholder="Suba archivo de prueba">
+                    </div>
+                </div>
+
+                <div class="divRow">
+                    <div class="divCell">
+                        <input id="input" type="text" name="email" id="" placeholder="Contacto">
+                    </div>
+                    <div class="divCell">
+                        <input id="input" type="text" name="email" id="" placeholder="Telefono">
+                    </div>
+                </div>
+
+                <div class="divRow">
+                    <div class="divCell">
+                        <input id="input" type="email" name="email" id="" placeholder="email del contacto">
+                    </div>
+                    <div class="divCell">
+                        <input id="input" type="text" name="email" id="" placeholder="Telefono">
+                    </div>
+                </div>
+                <br>
+                <div style="max-width:95%">
+                    <textarea name="textarea" rows="5"
+                        style="color: #4cc0f3; font-family: arial">Escribe su comentario</textarea>
+                </div>
+                <div class="divRow">
+                    <div class="divCell">
+                        <input id="input2" type="submit" name="enviar" Value="Enviar" id="">
+                    </div>
+                    <div class="divCell">
+                        <input id="input2" type="reset" name="enviar" Value="Limpiar" id="">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
