@@ -62,8 +62,10 @@
   html{
       font-family: var(--font-primary);
       color: var(--principal);
-      font-size: 62.5%; /* 1.7 rem 17 pixel para fuentes  em */
-  }
+      font-size: 62.5%; 
+        min-height: 100%;
+    }/* 1.7 rem 17 pixel para fuentes  em */
+
 
   /*Variables-fin*/
 
@@ -73,7 +75,9 @@
   background-color: rgb(5, 5, 5);
   background-image: url("../Imagenes/Imagen02.png");
   background-size: cover;
+    min-height: 100%;
 }
+
 
 /* Pagina index*/
 #bodyfondo {
@@ -124,6 +128,7 @@
   width: 300px;
   font-size: 18px;
   padding: 7px;
+  margin: 2px;
 
 }
 
@@ -300,6 +305,8 @@ div #menu-b {
   display: flex;
   flex-direction:row;
   flex-flow: row wrap;
+  width: auto;
+  height: auto;
 }
 
 .flexboxRow{
