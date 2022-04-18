@@ -9,10 +9,10 @@
   --font-color-titulo : #FFFAFA;
   --font-size-titulo : 3.0rem;
   --font-family-subtitulo : 'Montserrat' , sans-serif;
-  --font-color-subtitulo : #9B8667;
+  --font-color-subtitulo : #FFFAFA;;
+  --font-size-subtitulo : 1.8rem;
   --font-family-menu : 'bowlby-one-sc' , sans-serif;
   --font-color-menu : #FA8072;
-  --font-size-subtitulo : 1.8rem;
   --font-size-texto: 1.5rem;
   --font-color-texto:#FFFAFA;
   --font-family-texto:"arial"
@@ -37,7 +37,7 @@
    font-family: var(--font-family-titulo);
    color: var(--font-color-titulo);
    font-size: var(--font-size-titulo);
-   padding-left: 50px;
+   padding-left: 0px;
    padding-top: 5px;
    padding-bottom: 5px;
    }
@@ -45,6 +45,7 @@
   .subtitulo{
       font-family: var(--font-family-subtitulo);
       color: var(--font-color-subtitulo);
+      font-size: var(--font-size-subtitulo);
   }
 
   .fontMenu{
@@ -116,7 +117,7 @@
     margin-top: 25%;*/
   /*text-align: center;
     align-items: center;*/
-  margin-top: 2%;
+ /* margin-top: 2%;
   /*background-color: red;*/
 
   text-align: center;
@@ -181,7 +182,7 @@ div #menu-b {
 #link {
   outline: none;
   text-decoration: none;
-  color: #4cc0f3;
+  color: rgb(252, 250, 250);
   font-size: 18px;
 }
 
@@ -307,6 +308,7 @@ div #menu-b {
   flex-flow: row wrap;
   width: auto;
   height: auto;
+  align-items: center;
 }
 
 .flexboxRow{
@@ -322,7 +324,7 @@ div #menu-b {
 .flexboxColumn{
   display: flex;
   flex-direction: column; 
-  padding: 10px;
+  padding: 0px;
   width: 100%;
   flex-wrap: wrap;
   justify-content:space-around
@@ -391,3 +393,65 @@ input {
   /*6.8em  6.8 por 10 68px*/
 }
 
+/** footer Inicio***/
+.bodyf {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+.containerf {
+  flex: 1;    /* same as flex-grow: 1; */
+}
+
+.ulf {
+  list-style: none;
+  padding-left: 0;
+}
+.footerf {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+}
+.footerf a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-titlef {
+  color: rgb(187, 187, 187);
+  font-family: 'Merriweather', serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.ft-mainf {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-main-itemf {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
+}
+.ft-socialf {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-listf {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+    list-style: none;
+}
+.ft-social-list lif {
+    margin: 1.5rem;
+    font-size: 1.25rem;
+}
+.ifra{
+  width: 100%;
+  border: 0;
+}
+/** footer Fin***/

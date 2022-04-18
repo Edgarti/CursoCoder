@@ -1,0 +1,394 @@
+/*Variables inicio*/
+:root{
+    --principal : #0b0c0d;
+    --secundary: #fff;
+    --font-primary: "inter", sans-serif;
+    --font-secondary: "Bowly One SC", cursive;
+    --text-titulo: "Bowly One SC";
+    --font-family-titulo : 'Bebas Neue', arial;
+    --font-color-titulo : #FFFAFA;
+    --font-size-titulo : 3.0rem;
+    --font-family-subtitulo : 'Montserrat' , sans-serif;
+    --font-color-subtitulo : #9B8667;
+    --font-family-menu : 'bowlby-one-sc' , sans-serif;
+    --font-color-menu : #FA8072;
+    --font-size-subtitulo : 1.8rem;
+    --font-size-texto: 1.5rem;
+    --font-color-texto:#FFFAFA;
+    --font-family-texto:"arial"
+    
+  
+    }
+    
+    *,
+    *::after
+    *::after
+    *::before{
+        margin:0; /*rem*/
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    .filtro{
+      left: 70px;
+      background-color: #4cc0f3;
+    }
+    .titulo{
+     font-family: var(--font-family-titulo);
+     color: var(--font-color-titulo);
+     font-size: var(--font-size-titulo);
+     padding-left: 50px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     }
+  
+    .subtitulo{
+        font-family: var(--font-family-subtitulo);
+        color: var(--font-color-subtitulo);
+    }
+  
+    .fontMenu{
+    font-family: var(--font-family-menu);
+    color: var(--font-color-menu )
+    }
+   
+    .fonttexto{
+      font-family: var(--font-family-texto);
+      font-size: var(--font-size-texto);
+      color:var(--font-color-texto);
+      padding: 5px;
+    }
+  
+    html{
+        font-family: var(--font-primary);
+        color: var(--principal);
+        font-size: 62.5%; 
+          min-height: 100%;
+      }/* 1.7 rem 17 pixel para fuentes  em */
+  
+  
+    /*Variables-fin*/
+  
+  
+  /* Pagina index*/
+  #body {
+    background-color: rgb(5, 5, 5);
+    background-image: url("../Imagenes/Imagen02.png");
+    background-size: cover;
+      min-height: 100%;
+  }
+  
+  
+  /* Pagina index*/
+  #bodyfondo {
+    background-color: rgb(5, 5, 5);
+    background-image: url("../Imagenes/Imagen04.png");
+    background-size: cover;
+  }
+  
+  #todo {
+    background-color: rgb(5, 5, 5);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Imagenes/Imagen02.png");
+    background-size: cover;
+  }
+  
+  #hijo {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* centrar vertical y horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  }
+  
+  /* Pagina index*/
+  #form {
+    /*width: 50%;
+      margin-left : 25%;
+      margin-top: 25%;*/
+    /*text-align: center;
+      align-items: center;*/
+    margin-top: 2%;
+    /*background-color: red;*/
+  
+    text-align: center;
+  
+  }
+  
+  #input {
+    color: #4cc0f3;
+    width: 300px;
+    font-size: 18px;
+    padding: 3px;
+    margin: 2px;
+  
+  }
+  
+  ::placeholder {
+    color: #4cc0f3;
+    font-size: .7em;
+  }
+  
+  #input2 {
+    color: #4cc0f3;
+    width: 150px;
+    font-size: 16px;
+    padding: 5px;
+    font-family: Arial;
+  
+  }
+  
+  /* Pagina Inicio*/
+  div #menu-b {
+    margin: 20px auto;
+    text-align: right;
+   }
+  
+  #menu-b ul {
+    list-style: none;
+    align-items: right;
+  }
+  
+  #menu-b ul li {
+    margin: 0 10px;
+    float: left;
+  }
+  
+  #menu-b ul li a {
+    background: url(https://s3-eu-west-1.amazonaws.com/img-lawebera/anfergon/boton1.jpg) no-repeat left;
+    font-family: var(--font-family-menu);
+    color: var(--font-color-menu);
+    text-decoration: none;
+    padding: 5px 5px 5px 15px;
+    border-bottom: solid 5px #ccc;
+    font-family: var(--font-primary);
+  }
+  
+  #menu-b ul li a:hover {
+    color: rgb(252, 250, 250);
+    border-color: #4cc0f3;
+    background: url(https://s3-eu-west-1.amazonaws.com/img-lawebera/anfergon/boton3.jpg) no-repeat left;
+  }
+  
+  #link {
+    outline: none;
+    text-decoration: none;
+    color: #4cc0f3;
+    font-size: 18px;
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url(https://allfont.es/allfont.css?fonts=bebas-neue);
+  @import url(https://allfont.es/allfont.css?fonts=bowlby-one-sc);
+  /* Tabla Inicio*/
+  .divTable {
+    display: table;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px;
+    /*cellspacing:poor IE support for  this*/
+    /* border-collapse:separate;*/
+  }
+  
+  .divRow {
+    display: table-row;
+    width: auto;
+  }
+  
+  .divCell {
+    float: left;
+    /*fix for  buggy browsers*/
+    display: table-column;
+    width: 320px;
+    background-color: #ccc;
+  }
+  /* Tabla Fin*/
+  
+  .inlineBlock{
+    display: inline-block;
+    align-items: center;
+    margin: 0;
+    padding-left: 25%;
+  }
+  
+  #h1titulo{
+    font-family: 'Montserrat' , sans-serif; 
+    color: #4cc0f3;
+    text-align: center;
+    padding-top: 4%;
+  }
+  
+  /*MenuMaestras.html -Inicio*/
+  .contenedor{
+    display: flex;
+    flex-direction: row; 
+    justify-content: fspace-between;
+    padding-left: 10%;
+  }
+  
+  .boxMenu{
+    display: flex;
+    flex-direction: row; 
+    padding: 10px;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  
+  .boxImgen{
+    display: flex;
+    flex-direction: column; 
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+  }
+  .linkMenu{
+    outline: none;
+    text-decoration: none;
+    color: #4cc0f3;
+    font-size: 20px;
+    font-family: 'Montserrat' , sans-serif; 
+  }
+  .hoverMenu:hover{
+    background-color: #4cc0f3;
+    padding: 5px;
+    font-size: 20px ;
+    color:#f8f9fa;
+    font-family: 'Montserrat'
+    border-radius=10px;
+  }
+  /*MenuMaestras.html -fin*/
+  
+  .box-model{
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  
+  .boxline {
+    display: flex;
+  }
+  
+  .container {
+    /*background: steelblue;*/
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    padding: 5px;
+  
+  }
+  
+  .div__color01{
+    color: #4cc0f3;
+    background-color: #f2f6f8;
+    margin: 10px;
+  }
+  
+  .btoMenu{
+    background-color: #4cc0f3;
+    color: #f2f6f8;
+    width: 120px;
+    height: 120px;
+    margin: 20px; 
+  }
+  
+  .flexboxRowMenu{
+    display: flex;
+    flex-direction:row;
+    flex-flow: row wrap;
+    width: auto;
+    height: auto;
+  }
+  
+  .flexboxRow{
+    display: flex;
+    flex-direction: row; 
+    padding: 10px; 
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-around; 
+    align-items: center;
+    
+  }
+  .flexboxColumn{
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-around
+  }
+  .efectoDiv:hover {
+    background-color: #545454; 
+    font-size: 20px ;
+    color:#4cc0f3;
+    font-family: 'Montserrat'
+  }
+  
+  @media only screen and (max-width:330px){
+    form{
+      min-width:330px;
+      margin: 1em 2em;
+    }
+    #body {
+      background-color: rgb(236, 243, 224);
+  
+      background-size: cover;
+    }
+    
+    .boxMenu{
+      flex-direction: column;
+    }
+  
+    .gridMenu{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+  
+    #input{
+      width: 200px;
+    }
+    /* body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 330px;
+    }
+   
+   
+    
+  input {
+    color: #4cc0f3;
+    width: 250px;} */
+  
+  }
+  
+  .ContenedorReesponse{
+    max-width: 1080;
+    margin: 0 auto;
+  }
+  
+  .FlexRow{
+    display: flex;
+  }
+  
+  .Presentacion{
+    gap: 2rem; /*distancia entre objetos*/
+    /*flex-grow:1  se reparta el ancho de manera igual*/
+    /*flex-basis:50%  se reparta el ancho de manera igual en 50% ancho del contenedor*/
+    /*6.8em  6.8 por 10 68px*/
+  }
+  
+  
